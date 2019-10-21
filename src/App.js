@@ -5,8 +5,16 @@ import Footer from './Footer.js'
 import ToDo from './ToDo.js'
 import ContactCard from './contactCard';
 import Jokes from './Jokes.js'
+import JokesData from './JokesData'
 
 function App() {
+
+  const jokesComponents = JokesData.map((joke) => {
+    return (
+      <Jokes question={joke.question} punch={joke.punchline}/>
+    )
+  })
+  console.log(jokesComponents)
   return (
     <div>
       <nav>
@@ -36,20 +44,10 @@ function App() {
 
    
     <h1>Jokes Time : </h1>
-    <Jokes 
-      jokes={{
-        question: "What is the difference between your wife and your job?",
-        punch: "After five years your job still sucks."}}
-    />
-    <Jokes 
-      jokes={{
-        question: "Why are hurricanes normally named after women?",
-        punch: "When they come they're wild and wet, but when they go they take your house and car with them."}}
-    />
-    <Jokes 
-      jokes={{
-        punch: "After five years your job still sucks."}}
-    />
+    <div>
+      {jokesComponents}
+    </div>
+      
     </div>
   );
 }

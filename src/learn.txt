@@ -1,0 +1,8 @@
+map
+filter
+reduce
+sort
+every
+some
+find
+findindex
