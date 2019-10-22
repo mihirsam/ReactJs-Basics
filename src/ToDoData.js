@@ -19,7 +19,7 @@ const data = [
 
 const texts = data.map((text) => {
     return (
-        <li><input type="checkbox" name="vehicle1" value="Bike" checked={text.checked}/>{text.value}<br></br></li>
+        <li><input type="checkbox" name="vehicle1" value="Bike" checked={text.changed} onChange={() => text.changed = !text.checked}/>{text.value}<br></br></li>
     )
 })
 
