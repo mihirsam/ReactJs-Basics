@@ -9,6 +9,8 @@ import * as serviceWorker from './serviceWorker';
 import StateClass from './stateClass';
 import StatePrac from './stateClassPrac';
 import StatePracTwo from './statePracTwo';
+import HandlingEvent from './HandlingEvent';
+import ChangeState from './changeState';
 
 function MyApp()
 {
@@ -31,6 +33,8 @@ ReactDOM.render(<ClassAppPrac />, document.getElementById("classPrac"))
 ReactDOM.render(<StateClass />, document.getElementById("state"))
 ReactDOM.render(<StatePrac />, document.getElementById("stateprac"))
 ReactDOM.render(<StatePracTwo />, document.getElementById("statepractwo"))
+ReactDOM.render(<HandlingEvent />, document.getElementById("event"))
+ReactDOM.render(<ChangeState />, document.getElementById("changeState"))
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
